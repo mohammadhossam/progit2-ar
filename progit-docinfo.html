@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+    /* RTL rules adapted from progit2-fa's docinfo.html */
+    div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, #toctitle, .sidebarblock>.content>.title, form, p, blockquote, th, td, #content, .title {
+        direction: rtl;
+        text-align: right; /* Fallback align for converted outputs such as Docx */
+        text-align: justify;
+    }
+    /* Amiri for Arabic glyphs; Latin keeps Asciidoctor's default fonts */
+    body {
+        font-family: "Noto Serif", "Amiri", serif;
+    }
+    h1, h2, h3, h4, h5, h6, #toctitle {
+        font-family: "Open Sans", "Amiri", sans-serif;
+    }
+    pre, code {
+        direction: ltr;
+        unicode-bidi: embed;
+    }
+    pre {
+        text-align: left;
+    }
+    /* Force Right align to some elements */
+    th, .title {
+        text-align: right !important;
+    }
+    /* For TOC */
+    ul[class^="sectlevel"] {
+        margin-right: 1.25em;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 1em;
+    }
+    /* For lists */
+    ul, ol {
+        margin-right: 1.5em;
+        margin-left: 0;
+    }
+</style>
