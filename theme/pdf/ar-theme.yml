@@ -1,0 +1,15 @@
+# Arabic PDF theme: default theme + Amiri (by Khaled Hosny, OFL, v1.003) for Arabic glyphs.
+extends: default
+font:
+  catalog:
+    merge: true
+    Amiri:
+      normal: Amiri-Regular.ttf
+      bold: Amiri-Bold.ttf
+      italic: Amiri-Italic.ttf
+      bold_italic: Amiri-BoldItalic.ttf
+  fallbacks: [Amiri]
+base:
+  text_align: right
+heading:
+  text_align: right
